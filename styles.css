@@ -1,0 +1,77 @@
+body {  
+    font-family: 'Roboto', sans-serif;  
+    margin: 0;  
+    padding: 0;  
+    background-color: #f5f5f5; /* Light grey background for body */  
+    color: #333;  
+    font-size: 25px; /* Increased font size to 25 pixels */  
+}  
+
+.header {  
+    background: linear-gradient(135deg, #007bff, #00aaff); /* Gradient background */  
+    color: white;  
+    text-align: center;  
+    padding: 20px;  
+}  
+
+.main-title {  
+    font-size: 2.5em; /* Title font size */  
+    margin: 0;  
+}  
+
+.tagline {  
+    font-size: 1.5em;  
+    margin: 10px 0;  
+}  
+
+.navbar {  
+    margin: 20px 0;  
+}  
+
+.navbar ul {  
+    list-style: none;  
+    padding: 0;  
+    display: inline-block;  
+}  
+
+.navbar li {  
+    display: inline;  
+    margin: 0 15px;  
+}  
+
+.navbar a {  
+    color: white;  
+    text-decoration: none;  
+    font-weight: bold;  
+}  
+
+main {  
+    padding: 20px;  
+    line-height: 1.6; /* Improved line height for readability */  
+}  
+
+h2 {  
+    color: #007bff; /* Header color */  
+    margin-top: 20px; /* Top margin for headings */  
+}  
+
+blockquote {  
+    font-style: italic;  
+    border-left: 4px solid #007bff; /* Left border for blockquotes */  
+    padding-left: 15px; /* Padding for blockquotes */  
+    margin: 20px 0;  
+}  
+
+.back-button {  
+    display: inline-block;  
+    margin-top: 20px;  
+    padding: 10px 15px;  
+    background-color: #007bff; /* Background color for button */  
+    color: white;  
+    text-decoration: none;  
+    border-radius: 5px; /* Rounded corners */  
+}  
+
+.back-button:hover {  
+    background-color: #0056b3; /* Darker shade on hover */  
+}
