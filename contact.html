@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyborgonics - Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/cyborgonics-logo-white.png" height="50" alt="Cyborgonics Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="technology.html">Technology</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-white text-center">
+        <div class="container" data-aos="fade-up">
+            <h1 class="display-4 mb-4">Get in Touch</h1>
+            <p class="lead">We're here to answer your questions and explore possibilities</p>
+        </div>
+    </header>
+
+    <section class="contact-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="contact-form bg-white p-4 rounded shadow">
+                        <h2 class="mb-4">Send Us a Message</h2>
+                        <form action="https://formspree.io/f/xkgnanvv" method="POST">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number (Optional)</label>
+                                <input type="tel" class="form-control" id="phone" name="phone">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Your Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="contact-info bg-light p-4 rounded shadow">
+                        <h2 class="mb-4">Contact Information</h2>
+                        <div class="mb-4">
+                            <h4>Our Location</h4>
+                            <p>Cyborgonics Innovation Hub<br>Madurai, Tamil Nadu, India</p>
+                        </div>
+                        <div class="mb-4">
+                            <h4>Email Us</h4>
+                            <p>cyborgonics24@gmail.com<br>cyborgonicssquad@gmail.com</p>
+                        </div>
+                        <div class="mb-4">
+                            <h4>Call Us</h4>
+                            <p>+91 9363967409<br>+91 9940809890</p>
+                        </div>
+                        <div>
+                            <h4>Support Hours</h4>
+                            <p>Monday - Friday: 9:00 AM to 6:00 PM IST<br>
+                            Weekend Support: 10:00 AM to 4:00 PM IST</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="social-section text-center mt-5" data-aos="fade-up">
+                <h3 class="mb-4">Connect with Us</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/cyborgonics/" target="_blank" class="text-dark mx-3">
+                        <i class="bi bi-instagram fs-2"></i>
+                    </a>
+                    <a href="https://x.com/The_Cyborgonics" target="_blank" class="text-dark mx-3">
+                        <i class="bi bi-twitter-x fs-2"></i>
+                    </a>
+                    <a href="https://www.facebook.com/people/Cyborgonics-Official/61569052522227/" target="_blank" class="text-dark mx-3">
+                        <i class="bi bi-facebook fs-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Cyborgonics. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>
