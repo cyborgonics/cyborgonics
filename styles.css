@@ -1,10 +1,40 @@
-/* Hero Section with Black and Gold 3D Gradient Effect */
+/* Updated for Dark Theme */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar and Logo Positioning */
+.navbar-brand {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 1000;
+}
+
+.navbar-brand img {
+    max-height: 60px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1);
+}
+
+/* Hero Section Styling */
 .hero-section {
     background: linear-gradient(135deg, #000000, #FFD700);
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
     position: relative;
     overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
     box-shadow: 
         0 10px 20px rgba(0,0,0,0.3), 
         0 15px 40px rgba(255,215,0,0.2);
@@ -65,3 +95,23 @@
     transform: translateY(-3px);
     box-shadow: 0 6px 8px rgba(255,215,0,0.3);
 }
+
+/* Additional Gradient Links and Interactions */
+a {
+    color: #FFD700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar-brand {
+        top: 20px;
+        left: 20px;
+    }
+                               }
