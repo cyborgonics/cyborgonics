@@ -62,51 +62,33 @@ a:hover {
 
 }
 
-
-
 /* Hero Section */
-
 .hero-banner {
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     height: 100vh;
-
-    background: radial-gradient(circle, #1f4037, #121212);
-
+    background: radial-gradient(circle, black, gold);
     color: white;
-
     text-align: center;
-
     padding: 20px;
-
 }
-
-
 
 .hero-banner h1 {
-
     font-size: 3rem;
-
     font-weight: bold;
-
+    color: gold;
 }
-
-
 
 .hero-banner img {
-
     max-width: 100%;
-
     height: auto;
-
     border-radius: 10px;
-
+    border: 3px solid gold;
 }
+
+
+
 
 """
 
