@@ -52,16 +52,16 @@ a:hover {
 
 /* Header styling */
 header {
-    background: linear-gradient(135deg, #1f4037, #99f2c8);
-    color: #ffffff; /* White text for the gradient header */
+    background-color: #000000; /* Solid black background */
+    color: #ffffff; /* White text for contrast */
     padding: 20px;
     text-align: center;
 }
 
 /* Footer styling */
 footer {
-    background: linear-gradient(135deg, #1f4037, #99f2c8);
-    color: #ffffff; /* White text for the gradient footer */
+    background-color: #000000; /* Solid black background */
+    color: #ffffff; /* White text for contrast */
     padding: 20px;
     text-align: center;
 }
