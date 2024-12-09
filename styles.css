@@ -1,110 +1,125 @@
-:root {
-    --primary-color: #007bff;
-    --secondary-color: #00aaff;
-    --text-color: #333;
-    --bg-light: #f5f5f5;
-}
+# Read the CSS file for modification
+
+css_file_path = '/mnt/data/cyborgonics-main/cyborgonics-main/styles.css'
+
+with open(css_file_path, 'r') as css_file:
+
+    css_content = css_file.read()
+
+
+
+# Modify CSS for dark theme, gradient color scheme, and updated font
+
+updated_css = """
+
+/* Updated for Dark Theme */
 
 body {
-    font-family: 'Inter', sans-serif;
+
+    background-color: #121212;
+
+    color: #e0e0e0;
+
+    font-family: 'Poppins', sans-serif; /* Updated font */
+
     margin: 0;
-    padding-top: 80px;
-    background-color: var(--bg-light);
-    color: var(--text-color);
-    line-height: 1.6;
+
+    padding: 0;
+
 }
 
-.navbar {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-}
 
-.navbar-brand img {
-    transition: transform 0.3s ease;
-}
 
-.navbar-brand img:hover {
-    transform: scale(1.1);
-}
+/* Gradient Color Scheme */
 
-.hero-section {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+header, footer {
+
+    background: linear-gradient(135deg, #1f4037, #99f2c8);
+
     color: white;
-    padding: 100px 0;
-    position: relative;
-    overflow: hidden;
+
+    padding: 20px;
+
+    text-align: center;
+
 }
 
-.hero-image {
-    animation: float 4s ease-in-out infinite;
-    max-height: 500px;
+
+
+/* Links */
+
+a {
+
+    color: #99f2c8;
+
+    text-decoration: none;
+
 }
 
-@keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
+a:hover {
+
+    text-decoration: underline;
+
 }
 
-.pulse-animation {
-    animation: pulse 2s infinite;
-}
 
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
-}
 
-.features-section .feature-card {
-    background: white;
-    border-radius: 15px;
-    padding: 30px;
-    margin-bottom: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-}
+/* Hero Section */
 
-.features-section .feature-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-}
+.hero-banner {
 
-.feature-icon {
-    max-width: 80px;
-    margin-bottom: 20px;
-}
+    display: flex;
 
-.product-showcase {
-    background-color: var(--bg-light);
-}
+    align-items: center;
 
-.product-features li {
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-}
+    justify-content: center;
 
-footer {
-    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    height: 100vh;
+
+    background: radial-gradient(circle, #1f4037, #121212);
+
     color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
 }
 
-.social-links a {
-    font-size: 1.5rem;
-    transition: color 0.3s ease;
+
+
+.hero-banner h1 {
+
+    font-size: 3rem;
+
+    font-weight: bold;
+
 }
 
-.social-links a:hover {
-    color: var(--primary-color);
+
+
+.hero-banner img {
+
+    max-width: 100%;
+
+    height: auto;
+
+    border-radius: 10px;
+
 }
 
-@media (max-width: 768px) {
-    .hero-section {
-        text-align: center;
-        padding: 50px 0;
-    }
+"""
 
-    .hero-image {
-        margin-top: 30px;
-    }
-}
+
+
+# Save the updated CSS file
+
+with open(css_file_path, 'w') as css_file:
+
+    css_file.write(updated_css)
+
+
+
+# Display the updated CSS for verification
+
+updated_css
